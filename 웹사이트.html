@@ -2,31 +2,36 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>파일 다운로드 페이지</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 50px;
-    }
-    a.download-link {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-    a.download-link:hover {
-      background-color: #45a049;
-    }
-  </style>
+  <title>GitHub 다운로드 버튼</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>파일 다운로드</h1>
-  <p>아래 버튼을 클릭해서 파일을 다운로드하세요:</p>
-  <a href="files/asdf.png" download class="download-link">📥 파일 다운로드</a>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8">
+    <!-- 버튼 1: 현장대응 가정폭력 -->
+    <a href="https://github.com/jh-je/my-page/raw/main/files/현장대응%20가정폭력.pdf" download
+       class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-2xl shadow text-center">
+      현장대응 가정폭력 다운로드
+    </a>
+
+    <!-- 버튼 2: 현장대응 관계성범죄 -->
+    <a href="https://github.com/jh-je/my-page/raw/main/files/현장대응%20관계성범죄.pdf" download
+       class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-2xl shadow text-center">
+      현장대응 관계성범죄 다운로드
+    </a>
+
+    <!-- 버튼 3 ~ 6: 빈 버튼 (추후 추가 가능) -->
+    <a href="#" class="bg-red-600 text-white font-bold py-3 px-6 rounded-2xl shadow text-center opacity-50 cursor-not-allowed">
+      파일 3 준비 중
+    </a>
+    <a href="#" class="bg-purple-600 text-white font-bold py-3 px-6 rounded-2xl shadow text-center opacity-50 cursor-not-allowed">
+      파일 4 준비 중
+    </a>
+    <a href="#" class="bg-yellow-500 text-white font-bold py-3 px-6 rounded-2xl shadow text-center opacity-50 cursor-not-allowed">
+      파일 5 준비 중
+    </a>
+    <a href="#" class="bg-gray-700 text-white font-bold py-3 px-6 rounded-2xl shadow text-center opacity-50 cursor-not-allowed">
+      파일 6 준비 중
+    </a>
+  </div>
 </body>
 </html>
